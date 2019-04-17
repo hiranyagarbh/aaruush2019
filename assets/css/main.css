@@ -294,10 +294,10 @@ body {
     text-transform: uppercase;
 }
 .device-notification--message {
-    width: 70%;
+    width: 80%;
     margin: 30px 0 0 0;
     font-weight: 700;
-    text-align: center;
+    text-align: left;
 }
 @media (max-width: 767px) and (min-width: 601px) and (max-height: 680px) {
     .device-notification {
@@ -356,6 +356,10 @@ body {
     transition: transform .4s ease-in-out;
     transition: transform .4s ease-in-out,  -webkit-transform .4s ease-in-out;
 }
+#small_screen_noti{
+    width: 80%;
+    margin: auto;
+}
 .header {
     position: absolute;
     top: 0;
@@ -388,11 +392,18 @@ body {
     text-decoration: none;
     color: #fff;
 }
-.header--logo p {
-    margin: 0 0 0 10px;
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
+.header--logo img {
+    width: 35%;
+}
+@media (max-width: 767px) {
+    .header--logo img {
+        width: 30%;
+    }
+}
+@media (max-width: 767px) {
+    #into--aaruush {
+        position: relative;
+    }
 }
 .header--nav-toggle {
     display: -webkit-box;
@@ -555,10 +566,15 @@ body {
     justify-content: center;
     margin: 0 auto;
 }
+#clocktower {
+    height: 110%;
+    width: auto;
+}
 @media (max-width: 1180px) {
     .intro {
     max-width: 100%}
-}.intro--banner {
+}
+.intro--banner {
     position: relative;
     height: 475px;
 }
@@ -578,12 +594,38 @@ body {
     left: 0;
     width: 30px;
     height: 4px;
-    background-color: #0f33ff;
-}
-.intro--banner h1 {
+    background-color: #E26E38;}
+/*
+.intro--banner img:nth-child(1) {
     position: relative;
-    font-size: 68px;
-    font-weight: 900;
+    width: 70%;
+    margin-top: 20%;
+    z-index: 1;
+}
+@media (max-width: 767px) {
+    .intro--banner img:nth-child(1) {
+        width: 25%;
+    }
+}*/
+    
+#main_logo{
+    position: relative;
+    width: 70%;
+    margin-top: 20%;
+    z-index: 1;
+}
+@media (max-width: 767px) {
+    #main_logo{
+        left: 35px;
+        width: 80%;
+    }
+}
+    
+.intro--banner p {
+    position: relative;
+    width: 70%;
+    font-size: 28px;
+    font-weight: 300;
     line-height: 1;
     z-index: 1;
 }
@@ -669,35 +711,38 @@ body {
 .intro--options>a:last-child {
     margin-right: 0;
 }
-}@media (max-width: 767px) {
+}
+@media (max-width: 767px) 
+{
     .intro--banner {
     height: 305px;
+    }
+    .intro--banner h1 {
+        font-size: 44px;
+    }
+    .intro--banner img {
+        width: 330px;
+    }
+    .intro--options {
+        display: block;
+    }
+    .intro--options>a {
+        display: block;
+        max-width: 100%;
+        margin: 0 0 30px 0;
+    }
+    .intro--options>a:last-child {
+        margin-bottom: 0;
+    }
 }
-.intro--banner h1 {
-    font-size: 44px;
-}
-.intro--banner img {
-    width: 330px;
-}
-.intro--options {
-    display: block;
-}
-.intro--options>a {
-    display: block;
-    max-width: 100%;
-    margin: 0 0 30px 0;
-}
-.intro--options>a:last-child {
-    margin-bottom: 0;
-}
-}@media (max-width: 600px) {
+@media (max-width: 600px) {
     .intro--banner {
     height: 360px;
 }
 .intro--banner h1 {
     font-size: 55px;
 }
-.intro--banner img {
+.intro--banner img:nth-child(2) {
     display: none;
 }
 }@media (max-width: 600px) and (max-height: 750px) {
@@ -911,28 +956,6 @@ body {
     position: relative;
     height: 475px;
 }
-.about--banner::before {
-    content: "";
-    position: absolute;
-    top: 20px;
-    left: 200px;
-    -webkit-transform: rotate(-25deg);
-    transform: rotate(-25deg);
-    border: 5px solid #0f33ff;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-}
-.about--banner::after {
-    content: "";
-    position: absolute;
-    top: 75px;
-    left: 400px;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    width: 10px;
-    height: 10px;
-    background-color: #0f33ff;
-}
 .about--banner h2 {
     position: relative;
     margin-top: 35px;
@@ -941,23 +964,14 @@ body {
     line-height: 1;
     z-index: 1;
 }
-.about--banner h2::before {
-    content: "";
-    position: absolute;
-    top: 60px;
-    left: 268px;
-    width: 30px;
-    height: 30px;
-    background-color: #0f33ff;
-    border-radius: 50%}
-.about--banner h2::after {
-    content: "";
-    position: absolute;
-    top: 255px;
-    left: 255px;
-    width: 10px;
-    height: 10px;
-    background-color: #0f33ff;
+.about--banner p {
+    position: relative;
+    margin-top: 35px;
+    font-size: 18px;
+    width: 70%;
+    text-align: left;
+    line-height: 1;
+    z-index: 1;
 }
 .about--banner a {
     padding: 5px 17px 5px 0;
@@ -1003,7 +1017,7 @@ body {
     height: 75px;
     text-decoration: none;
     color: #fff;
-    border: 10px solid #0f33ff;
+    border: 10px solid #E26E38;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

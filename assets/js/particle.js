@@ -1,14 +1,14 @@
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 355,
+      "value": 600,
       "density": {
         "enable": true,
         "value_area": 789.1476416322727
       }
     },
     "color": {
-      "value": "#ffffff"
+      "value": "#ffffff" /*==star color ==*/
     },
     "shape": {
       "type": "circle",
@@ -26,17 +26,17 @@ particlesJS("particles-js", {
       }
     },
     "opacity": {
-      "value": 0.48927153781200905,
+      "value": 0.5, /* == star opacity ==*/
       "random": false,
       "anim": {
         "enable": true,
-        "speed": 0.2,
-        "opacity_min": 0,
+        "speed": 0.3, /* == transition time ==*/
+        "opacity_min": 0, /* == minimum opacity ==*/
         "sync": false
       }
     },
     "size": {
-      "value": 2,
+      "value": 2.1, /*== star size ==*/
       "random": true,
       "anim": {
         "enable": true,
@@ -46,7 +46,7 @@ particlesJS("particles-js", {
       }
     },
     "line_linked": {
-      "enable": false,
+      "enable": false, /* == do not delete ==*/
       "distance": 150,
       "color": "#ffffff",
       "opacity": 0.4,
@@ -54,7 +54,7 @@ particlesJS("particles-js", {
     },
     "move": {
       "enable": true,
-      "speed": 0.2,
+      "speed": 0.3, /* == speed of moving stars == */
       "direction": "none",
       "random": true,
       "straight": false,
@@ -71,7 +71,7 @@ particlesJS("particles-js", {
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": true,
+        "enable": false,
         "mode": "bubble"
       },
       "onclick": {
