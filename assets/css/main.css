@@ -995,7 +995,9 @@ body {
 .about--banner img {
     position: absolute;
     bottom: -90px;
-    right: -12px;
+    right: -20px;
+    width: 65%;
+    opacity: 0.6;
 }
 .about--options {
     display: -webkit-box;
