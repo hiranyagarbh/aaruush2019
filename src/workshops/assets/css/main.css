@@ -30,6 +30,7 @@ body {
 
 ol, ul {
 	list-style: none;
+    color: #000;
 }
 
 blockquote, q {
