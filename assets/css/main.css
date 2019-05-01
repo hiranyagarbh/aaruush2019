@@ -998,6 +998,7 @@ body {
     right: -20px;
     width: 65%;
     opacity: 0.6;
+    z-index: -1;
 }
 .about--options {
     display: -webkit-box;
@@ -1046,61 +1047,72 @@ body {
     transition: bottom .2s ease-in-out, left .2s ease-in-out;
 }
 @media (max-width: 767px) {
-    .about--banner {
-    height: 305px;
+        .about--banner {
+        height: 305px;
+    }
+    .about--banner::before {
+        top: 0;
+        left: 125px;
+    }
+    .about--banner::after {
+        top: 35px;
+        left: 260px;
+    }
+    .about--banner h2 {
+        margin-top: 10px;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+    .about--banner h2::before {
+        top: 28px;
+        left: 168px;
+    }
+    .about--banner h2::after {
+        top: 163px;
+        left: 163px;
+    }
+    .about--banner img 
+        {
+        width: 315px;
+        }
+    .about--options>a {
+        border:2px solid #fff;
+        margin: 0.4em;
+    }
 }
-.about--banner::before {
-    top: 0;
-    left: 125px;
+    
+
+    @media (max-width: 600px) {
+        .about--banner {
+        height: auto;
+    }
+    .about--banner::before {
+        left: 155px;
+    }
+    .about--banner::after {
+        left: 310px;
+    }
+    .about--banner h2 {
+        margin-top: 0;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+    .about--banner h2::before {
+        top: 43px;
+        left: 214px;
+    }
+    .about--banner h2::after {
+        top: 205px;
+        left: 205px;
+    }
+    .about--banner img {
+        width: 90%;
+        left: 6em;
+        top: 7em;
+    }
 }
-.about--banner::after {
-    top: 35px;
-    left: 260px;
-}
-.about--banner h2 {
-    margin-top: 10px;
-    font-size: 44px;
-}
-.about--banner h2::before {
-    top: 28px;
-    left: 168px;
-}
-.about--banner h2::after {
-    top: 163px;
-    left: 163px;
-}
-.about--banner img {
-    width: 315px;
-}
-}@media (max-width: 600px) {
-    .about--banner {
-    height: auto;
-}
-.about--banner::before {
-    left: 155px;
-}
-.about--banner::after {
-    left: 310px;
-}
-.about--banner h2 {
-    margin-top: 0;
-    font-size: 55px;
-}
-.about--banner h2::before {
-    top: 43px;
-    left: 214px;
-}
-.about--banner h2::after {
-    top: 205px;
-    left: 205px;
-}
-.about--banner img {
-    display: none;
-}
-.about--options {
-    display: none;
-}
-}.contact {
+
+.contact {
     position: fixed;
     top: 0;
     left: 0;
