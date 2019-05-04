@@ -813,11 +813,15 @@ body {
     margin-top: 10px;
     font-size: 12px;
     font-weight: 700;
+    letter-spacing: 7px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 100px;
+    padding: 5px 0;
     text-transform: uppercase;
 }
 .work--lockup .slider--item-description {
     display: none;
-    max-width: 250px;
+    max-width: 290px;
     margin: 0 auto;
 }
 .work--lockup .slider--item-image {
@@ -828,7 +832,8 @@ body {
     overflow: hidden;
 }
 .work--lockup .slider--item-image img {
-    width: 100%}
+    width: 100%
+}
 .work--lockup .slider--item-left {
     top: 50%;
     left: 0;
