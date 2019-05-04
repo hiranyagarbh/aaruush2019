@@ -21,7 +21,7 @@
 
     <div id="particles-js"></div>
 
-   <!-- If device is too small, dsiplay the following message. -->
+   <!-- If device is too small, dsiplay the following message -->
     <div class="device-notification">
         <a class="device-notification--logo" href="#0">
             <img src="assets/img/aaruush_logo.png" alt="Aaruush" id="small_screen_noti">
@@ -50,12 +50,12 @@
                             <li><span>Works</span></li>
                             <li><span>Sponsors</span></li>
                             <li><span>Contact Us</span></li>
-                            <li><span>Links</span></li>
+                            <li><span>Portals</span></li>
                         </ul>
                     </nav>
                     <ul class="l-main-content main-content">
                        <!-- front page -->
-                        <li class="l-section section section--is-active">
+                        <li id="home" class="l-section section section--is-active">
                             <div class="intro">
                                 <div class="intro--banner">
                                     <img src="assets/img/aaruush_logo.png" alt="Aaruush 2019" id="main_logo">
@@ -85,7 +85,7 @@
                         </li>
                         
                         <!-- About Us -->
-                        <li class="l-section section">
+                        <li id="about" class="l-section section">
                             <div class="about">
                                 <div class="about--banner">
                                     <h2>"Harmonising Dreams,<br/>Inspiring Ingenuity"</h2>
@@ -155,7 +155,7 @@
                         </li>
 
                         <!-- Events -->
-                        <li class="l-section section">
+                        <li id="events" class="l-section section">
                             <div class="work">
                                 <!--<h2>Selected work</h2>-->
                                 <div class="work--lockup">
@@ -255,7 +255,7 @@
                         </li>
 
                         <!-- Sponsors -->
-                        <li class="l-section section">
+                        <li id="sponsors" class="l-section section">
                             <div class="about">
                                 <div class="about--banner">
                                     <h2 class="sponsor_head">Our Previous Sponsors&#58;</h2>
@@ -267,7 +267,7 @@
                         </li>
 
                         <!-- Contect -->
-                        <li class="l-section section">
+                        <li id="contact" class="l-section section">
                             <div class="contact">
                                 <div class="contact--lockup">
                                     <div class="modal">
@@ -291,7 +291,7 @@
                         </li>
                         
                         <!-- Other main links -->
-                        <li class="l-section section">
+                        <li id="portals" class="l-section section">
                             <div class="hire">
                                 <h2>Other main links</h2>
                                 <!-- checkout formspree.io for easy form setup -->
@@ -385,14 +385,15 @@
                 </div>
             </div>
         </div>
-        <!-- main menu -->
+        <!-- Main Menu -->
         <ul class="outer-nav">
-            <li><a href="#">About Us</a></li>
-            <li><a href="www.facebook.com">Sponsors</a></li>
-            <li><a href="www.facebook.com">CA Portal</a></li>
-            <li><a href="www.facebook.com">Accomodation</a></li>
-            <li><a href="www.facebook.com">Team</a></li>
-            <li><a href="www.facebook.com">Credits</a></li>
+            <li><a href="">Home</a></li> <!-- self -->
+            <li><a href="#">About Us</a></li> <!-- self -->
+            <li><a href="#portals">Events</a></li> <!-- self -->
+            <li><a href="#">Portals</a></li> <!-- self/last section -->
+            <li><a href="#">Team</a></li> <!-- blank -->
+            <li><a href="#">Credits</a></li> <!-- blank -->
+            <li><a href="#">More</a></li> <!-- self/last section -->
         </ul>
     </div>
     

@@ -117,13 +117,7 @@ $( document ).ready(function() {
   }
 
   // sync side and outer navigations
-  function updateNavs(nextPos) {
 
-    $('.side-nav, .outer-nav').children().removeClass('is-active');
-    $('.side-nav').children().eq(nextPos).addClass('is-active');
-    $('.outer-nav').children().eq(nextPos).addClass('is-active');
-
-  }
 
   // update main content area
   function updateContent(curPos, nextPos, lastItem) {
