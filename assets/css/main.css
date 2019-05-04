@@ -1204,6 +1204,11 @@ body {
 .contact--lockup .modal--options a:nth-child(5) {
     background-color: #ff0000;
 }
+@media (max-width: 600px) {
+    .modal {
+        padding: 40px 20px !important;
+    }
+}
 .hire {
     position: relative;
     display: -webkit-box;
