@@ -1025,6 +1025,10 @@ body {
     top: 40px;
     width: 100%;
     background-color: rgba(0,0,0,0.6);
+    visibility: visible;
+}
+.about--banner .sponsors_mobile{
+    visibility: hidden;
 }
 .about--options {
     display: -webkit-box;
@@ -1140,7 +1144,13 @@ body {
         top: 7em;
     }
     .about--banner .sponsors_img {
-        top: -70px;
+        visibility: hidden;
+    }
+    .about--banner .sponsors_mobile{
+        visibility: visible;
+        width: 30%;
+        padding: 0;
+        margin: 0 0 0 150px;
     }
 }
 
