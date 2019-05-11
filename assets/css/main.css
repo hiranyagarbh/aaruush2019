@@ -579,7 +579,24 @@ body {
     margin: 0 auto 0 auto;
     opacity: 0.8;
 }
-@media only screen and (max-width:800px){
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+    #scroll_down {
+        position: relative;
+        vertical-align: bottom;
+        bottom: -200px;
+        width: 25%;
+        opacity: 0.8;
+    }
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
     #scroll_down {
         position: relative;
         vertical-align: bottom;
