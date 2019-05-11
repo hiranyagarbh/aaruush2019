@@ -1014,17 +1014,17 @@ body {
 
 .about--banner .aaruush_dark_bg {
     position: absolute;
-    bottom: -90px;
+    bottom: -100px;
     right: -200px;
     width: 65%;
-    opacity: 0.6;
+    opacity: 0.5;
     z-index: -1;
 }
 .about--banner .sponsors_img {
     position: absolute;
     top: 40px;
     width: 100%;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(255,255,255,0.3);
     visibility: visible;
 }
 .about--banner .sponsors_mobile{
@@ -1123,7 +1123,7 @@ body {
         left: 310px;
     }
     .about--banner .sponsor_head {
-        top: -80px
+        top: 20px
     }
     .about--banner h2 {
         margin-top: 0;
@@ -1140,17 +1140,17 @@ body {
     }
     .about--banner .aaruush_dark_bg {
         width: 90%;
-        left: 6em;
-        top: 7em;
+        left: 11em;
+        top: 19em;
     }
     .about--banner .sponsors_img {
         visibility: hidden;
     }
     .about--banner .sponsors_mobile{
         visibility: visible;
-        width: 30%;
-        padding: 0;
-        margin: 0 0 0 150px;
+        width: 100%;
+        margin-top: 50px;
+        background-color: rgba(255,255,255,0.3);
     }
 }
 
