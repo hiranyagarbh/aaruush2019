@@ -625,11 +625,12 @@ body {
 .intro--banner::after {
     content: "";
     position: absolute;
-    bottom: 18px;
+    bottom: 340px;
     left: 0;
-    width: 30px;
-    height: 4px;
-    background-color: #E26E38;}
+    width: 71%; /*adjust length and uncomment color*/
+    height: 5px;
+    background-color: #E26E38;
+}
 /*
 .intro--banner img:nth-child(1) {
     position: relative;
