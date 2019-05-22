@@ -1127,7 +1127,7 @@ body {
         width: 315px;
         }
     .about--options>a {
-        border:2px solid #fff;
+        border:4px solid #EE6F33;
         margin: 0.4em;
     }
 }
@@ -1374,42 +1374,46 @@ body {
 .work-request--options .options-a a:hover, .work-request--options .options-b a:hover{
     background: #EE6F33;
 }
-@media (max-width: 767px) {
-    .work-request--options {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-}
-.work-request--options .options-a, .work-request--options .options-b {
-    display: block;
-    width: auto;
-}
-}@media (max-width: 600px) {
-    .work-request--options {
-    margin: 20px 0;
-}
-}@media (max-width: 600px) and (max-width: 415px) {
-    .work-request--options {
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-}@media (max-width: 600px) {
 
-.work-request--information {
-    margin-bottom: 30px;
+@media (max-width: 767px) {
+		.work-request--options {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-justify-content: space-around;
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+	}
+	.work-request--options .options-a, .work-request--options .options-b {
+		display: flex;
+		flex-wrap: wrap;
+		width: auto;
+	}
 }
-.work-request--information .information-name, .work-request--information .information-email {
-    height: 40px;
-    font-size: 24px;
+
+@media (max-width: 600px) and (max-width: 415px) 
+	{
+		.work-request--options {
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		}
 }
-}.perspective {
+@media (max-width: 600px) 
+{
+
+	.work-request--information {
+		margin-bottom: 30px;
+	}
+	.work-request--information .information-name, .work-request--information .information-email {
+		height: 40px;
+		font-size: 24px;
+	}
+}
+.perspective {
     position: relative;
     width: 100%;
     height: 100%;
