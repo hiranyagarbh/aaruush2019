@@ -1335,7 +1335,7 @@ body {
     align-items: center;
     margin: 30px 0;
 }
-.work-request--options .options-a {
+.work-request--options .options-a{
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1345,17 +1345,6 @@ body {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-}
-.work-request--options .options-a a{
-    padding: 5px 10px;
-    margin: 10px;
-    border: 2px solid white;
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Montserrat';
-}
-.work-request--options .options-a a:hover{
-    background: #D47345;
 }
 .work-request--options .options-b {
     display: -webkit-box;
@@ -1369,6 +1358,17 @@ body {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around;
+}
+.work-request--options .options-a a, .work-request--options .options-b a{
+    padding: 15px 20px;
+    margin: 10px;
+    border: 3px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Montserrat';
+}
+.work-request--options .options-a a:hover, .work-request--options .options-b a:hover{
+    background: #EE6F33;
 }
 @media (max-width: 767px) {
     .work-request--options {
