@@ -655,8 +655,9 @@ body {
 }
 @media (max-width: 767px) {
     #main_logo{
-        left: 35px;
-        width: 80%;
+		top 0;
+        left: 25px;
+        width: 85%;
     }
 }
     

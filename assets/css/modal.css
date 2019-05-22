@@ -2,7 +2,7 @@
 .modal1 {
     display: none;/* Hidden by default */
     position: fixed;/* Stay in place */
-    z-index: 1;/* Sit on top */
+    z-index: 11;/* Sit on top */
     left: 0;
     top: 0;
     width: 100%;/* Full width */
@@ -16,9 +16,9 @@
 /* Modal Content/Box */
 .modal-content {
     background-color: rgba(255, 255, 255, 0.9);
-    margin: 10% auto;/* 10% from the top and centered */
+    margin: 7% auto;/* 10% from the top and centered */
     padding: 20px;
-    width: 80%;/* Could be more or less, depending on screen size */
+    width:70%;/* Could be more or less, depending on screen size */
 }
 
 .modal-header {
