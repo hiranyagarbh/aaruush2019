@@ -1244,6 +1244,7 @@ body {
 	width: 100%;
 	height: 100%;
 	background-image: url("../img/contact-visual.png");
+	z-index: 10;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1632,4 +1633,21 @@ body {
 .outer-nav li.is-vis:nth-child(5) {
 	-webkit-transition-delay: .16s;
 	transition-delay: .16s;
+}
+/* dev by team envision */
+.foot_img {
+	position: relative;
+}
+.bottomright {
+	position: absolute;
+	bottom: 8px;
+	right: 16px;
+	z-index: 11;
+	width: 12%;
+	opacity: 0.7;
+}
+@media (max-width: 767px) {
+	.foot_img {
+		visibility: hidden;
+	}
 }
