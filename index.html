@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Aaruush 2019</title>
+	<title>AARUUSH 2019</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link rel="stylesheet" href="assets/css/particle.css">
 	<link rel="stylesheet" href="assets/css/modal.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 	<!-- font-awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
@@ -48,10 +49,10 @@
 						<ul class="side-nav">
 							<li class="is-active"><span>Home</span></li>
 							<li><span>About</span></li>
-							<li><span>Works</span></li>
+							<li><span>Events</span></li>
 							<li><span>Sponsors</span></li>
 							<li><span>Contact Us</span></li>
-							<li><span>More</span></li>
+							<li><span>Trademark Events</span></li>
 						</ul>
 					</nav>
 					<ul class="l-main-content main-content">
@@ -92,63 +93,40 @@
 									<img src="assets/img/aaruush_bg.png" class="aaruush_dark_bg" alt="Aaruush sunrise">
 								</div>
 								<div class="about--options">
-									<a href="#0" id="myBtn">
+									<a href="#about_srm" rel="modal:open">
 										<h3>About SRM</h3>
 									</a>
-									<a href="#0" id="myBtn2">
+									<a href="#legacy" rel="modal:open">
 										<h3>Legacy</h3>
 									</a>
-									<a href="#0" id="myBtn3">
+									<a href="#themes" rel="modal:open">
 										<h3>Themes</h3>
 									</a>
 								</div>
 								<!-- About SRM Modal -->
-								<div id="myModal" class="modal1">
-									<div class="modal-content">
-										<div class="modal-header">
-											<span class="close">&times;</span>
-											<h2>About SRM</h2>
-										</div>
-										<div class="modal-body">
-											<p>SRM Institute of Science and Technology (deemed to be university), one of the premier institutes of the country, and was established in the year 1985. SRMIST holds one of the top ranks in the country, educating more than 38,000 students across campuses spread across the nation providing a wide range of undergraduate, postgraduate as well as doctoral programs in Engineering, Management, Medicine and Health sciences, and Science and Humanities. SRMIST takes pride in its 4000-capacity auditorium, one of India’s largest indoor auditorium and its 250 acre humongous campus. SRM is also the only institute in the nation to have launched its own satellite, SRMSAT in 2011.</p>
-											<p>By providing the students with premium hostel facilities and an endless list of conveniences in and around campus, such as canteens, gymnasiums, prayer halls, book stores, departmental stores, laptop repair centers and ATMs, the college makes sure to cater to all the needs of students and teachers alike.</p>
-											<p>In collaboration with world-renowned institutions such as MIT, Carnegie Mellon, UC Davis and Warwick, SRMIST always aims to improve the curriculum, keeping them at par with the global standards. The SRMIST has accreditations from the national agencies like the UGC, AICTE and boasts an ‘A’ grade from the NAAC. Some of the courses additionally have an ABET accreditation.</p>
-											<p>SRM follows an ideology wherein they encourage the students to employ research oriented learning methods while laying a strong emphasis on undertaking projects, the proof of that being the presence of a number of reputed student led projects such as the SRMUAV, SRMAUV, SRMSAT, Camber Racing, 4ze Racing just to name a few. The SRMIST stays true to its motto of Learn, Leap and Lead, as it strives to be the forerunner in its field, providing undiluted support in the form o well-versed faculty, state of the art laboratories, global exposure and a research-conducive environment.</p>
-										</div>
-									</div>
+								<div id="about_srm" class="modal">
+									<h2>About SRM</h2>
+									<p>SRM Institute of Science and Technology (deemed to be university), one of the premier institutes of the country, and was established in the year 1985. SRMIST holds one of the top ranks in the country, educating more than 38,000 students across campuses spread across the nation providing a wide range of undergraduate, postgraduate as well as doctoral programs in Engineering, Management, Medicine and Health sciences, and Science and Humanities. SRMIST takes pride in its 4000-capacity auditorium, one of India’s largest indoor auditorium and its 250 acre humongous campus. SRM is also the only institute in the nation to have launched its own satellite, SRMSAT in 2011.</p>
+									<p>By providing the students with premium hostel facilities and an endless list of conveniences in and around campus, such as canteens, gymnasiums, prayer halls, book stores, departmental stores, laptop repair centers and ATMs, the college makes sure to cater to all the needs of students and teachers alike.</p>
+									<p>In collaboration with world-renowned institutions such as MIT, Carnegie Mellon, UC Davis and Warwick, SRMIST always aims to improve the curriculum, keeping them at par with the global standards. The SRMIST has accreditations from the national agencies like the UGC, AICTE and boasts an ‘A’ grade from the NAAC. Some of the courses additionally have an ABET accreditation.</p>
+									<p>SRM follows an ideology wherein they encourage the students to employ research oriented learning methods while laying a strong emphasis on undertaking projects, the proof of that being the presence of a number of reputed student led projects such as the SRMUAV, SRMAUV, SRMSAT, Camber Racing, 4ze Racing just to name a few. The SRMIST stays true to its motto of Learn, Leap and Lead, as it strives to be the forerunner in its field, providing undiluted support in the form o well-versed faculty, state of the art laboratories, global exposure and a research-conducive environment.</p>
 								</div>
-								<!-- Legacy Modal -->
-								<div id="myModal2" class="modal1">
-									<div class="modal-content">
-										<div class="modal-header">
-											<span class="close2 close">&times;</span>
-											<h2>Legacy</h2>
-										</div>
-										<div class="modal-body">
-											<p>The word &#39;<i>Aaruush</i>&#39; translates to &#39;the first rays of the sun&#39;. And that&#39;s what it was, at the time of its inception back in 2007, the rays of the sun, which would eventually enlighten the lives of many people for years to come. Started by four visionary final year students of the college, Aaruush was initially intended to be a technical fest; consisting of 26 events and over 3000 participants, but it has exceeded the expectations of all. And so successful was the idea, that the inauguration was presided over by the former president of India, Dr. A.P.J. Abdul Kalam.</p>
-											<p>"Seek and you shall find, when you feel everything is lost, innovation will guide you through" his words still echo in the minds of many and has taken Aaruush to the position where it stands now. After its noteworthy beginning in 2007, there was no looking back, it only kept getting better each year. The following year saw Aaruush go national, with over 4500 participants from over 24 states. It was in 2009 that Aaruush evolved from merely a technical fest, to a Techno-Management extravaganza, as we included two new domains - Fundaz and Online. The reputation of Aaruush kept growing, having tie ups with organizations like European Southern Observatory, IEEE, European Space Agency, and had DRDO unveil its latest technology in the form of the 'Arjun' tank. Reputed NGO's like PETA, HOPE, CRY associated with Aaruush, reflect its social responsibility. And it only got better, Aaruush 2012 and 2013 hosted several stalwarts of repute such as Dr. Richard Matthew Stallman, Mr. Rajan Anandan, Dr. Tessy Thomas, Mr. Aakash Sinha, all sharing their knowledge with the participants. Aaruush 2014 saw us welcome eminent personalities such as Dr. Krishnaswamy Kasturirangan, Anuraag Batra, Dr. Eshwar Natarajan and also welcomed Mr. Sam Pitroda, all the way from America, with the help of state of the art video conferencing technology.</p>
-											<p>Aaruush that year, witnessed an unprecedented footfall, crossing 37000 and set another record, being the platform where the new Arjun Mk II tank was first unraveled. And for those who thought a Techno-Management fest was only about education, Aaruush proved that it was way more, by conducting light and sound shows, Pro shows and the famous Aaruush-Nites that attracted the masses by the thousands. The various expos that took place, including the coins expo, the newspaper expo, the Indian Army Weapons Expo and the Auto Expo were prime attractions as the 8th edition of the fest came to a grand end.</p>
-											<p>The 12th edition of Aaruush saw a footfall of 70,000, over 10 workshops, 10 luminary addresses, 60+ events, thrilling challenges and championships and a plethora of learning opportunities hand in hand with fun and intellectually stimulating activities. Our race towards infinity is fast-paced and reaching higher standards as we go. Aaruush ’19 is going to reach greater heights; we’ve seen the black-hole now so for team Aaruush the sky is also no limit.</p>
-										</div>
-									</div>
+								<div id="legacy" class="modal">
+									<h2>Legacy</h2>
+									<p>The word &#39;<i>Aaruush</i>&#39; translates to &#39;the first rays of the sun&#39;. And that&#39;s what it was, at the time of its inception back in 2007, the rays of the sun, which would eventually enlighten the lives of many people for years to come. Started by four visionary final year students of the college, Aaruush was initially intended to be a technical fest; consisting of 26 events and over 3000 participants, but it has exceeded the expectations of all. And so successful was the idea, that the inauguration was presided over by the former president of India, Dr. A.P.J. Abdul Kalam.</p>
+									<p>"Seek and you shall find, when you feel everything is lost, innovation will guide you through" his words still echo in the minds of many and has taken Aaruush to the position where it stands now. After its noteworthy beginning in 2007, there was no looking back, it only kept getting better each year. The following year saw Aaruush go national, with over 4500 participants from over 24 states. It was in 2009 that Aaruush evolved from merely a technical fest, to a Techno-Management extravaganza, as we included two new domains - Fundaz and Online. The reputation of Aaruush kept growing, having tie ups with organizations like European Southern Observatory, IEEE, European Space Agency, and had DRDO unveil its latest technology in the form of the 'Arjun' tank. Reputed NGO's like PETA, HOPE, CRY associated with Aaruush, reflect its social responsibility. And it only got better, Aaruush 2012 and 2013 hosted several stalwarts of repute such as Dr. Richard Matthew Stallman, Mr. Rajan Anandan, Dr. Tessy Thomas, Mr. Aakash Sinha, all sharing their knowledge with the participants. Aaruush 2014 saw us welcome eminent personalities such as Dr. Krishnaswamy Kasturirangan, Anuraag Batra, Dr. Eshwar Natarajan and also welcomed Mr. Sam Pitroda, all the way from America, with the help of state of the art video conferencing technology.</p>
+									<p>Aaruush that year, witnessed an unprecedented footfall, crossing 37000 and set another record, being the platform where the new Arjun Mk II tank was first unraveled. And for those who thought a Techno-Management fest was only about education, Aaruush proved that it was way more, by conducting light and sound shows, Pro shows and the famous Aaruush-Nites that attracted the masses by the thousands. The various expos that took place, including the coins expo, the newspaper expo, the Indian Army Weapons Expo and the Auto Expo were prime attractions as the 8th edition of the fest came to a grand end.</p>
+									<p>The 12th edition of Aaruush saw a footfall of 70,000, over 10 workshops, 10 luminary addresses, 60+ events, thrilling challenges and championships and a plethora of learning opportunities hand in hand with fun and intellectually stimulating activities. Our race towards infinity is fast-paced and reaching higher standards as we go. Aaruush ’19 is going to reach greater heights; we’ve seen the black-hole now so for team Aaruush the sky is also no limit.</p>
 								</div>
-								<!-- Theme Modal -->
-								<div id="myModal3" class="modal1">
-									<div class="modal-content">
-										<div class="modal-header">
-											<span class="close3 close">&times;</span>
-											<h2>Theme &amp; Motto</h2>
-										</div>
-										<div class="modal-body">
-											<p>"Towards Infinity"
-												<br>Getting across the message of the need for innovations and technical breakthroughs to create a benchmark in the industry and make an actual difference. We believe in overcoming obstacles and exceeding expectations with tireless hard work and dedication.</p>
-											<p>These are just few of the words we use to describe things that are Infinite. Aaruush uses these ideas to create a platform showcasing a plethora of talent. We find infinity in the number of stars in the night sky, the number of raindrops in an ocean, the memories hidden behind the lens of an eye and the number of ideas that emerge out of minds alike.</p>
-											<p>Aaruush towards Infinity leads these minds towards the path of inspiration, discovery, growth and achievement. It brings out the talents of more than 40,000 of its participants with utmost enthusiasm and gratification. With mind-boggling events and eye-catching highlights, Aaruush ’19 steps into its 13th year with the ambition of leaping across the stars and furthering the very definition of infinity.</p>
-											<p>Motto of Aaruush:</p>
-											<p><b>"Rising in the spirit of innovation"</b></p>
-											<p>Striving to change the world with the power of innovation and cumulative efforts of bright ignited minds to bridge the gap between technological advancements and societal expectations is the bedrock of Aaruush. We believe in constantly rising and approaching problems with innovative solutions to make the world a sound place to live in.</p>
-										</div>
-									</div>
+								<div id="themes" class="modal">
+									<h2>Themes</h2>
+									<p>"Towards Infinity"
+										<br>Getting across the message of the need for innovations and technical breakthroughs to create a benchmark in the industry and make an actual difference. We believe in overcoming obstacles and exceeding expectations with tireless hard work and dedication.</p>
+									<p>These are just few of the words we use to describe things that are Infinite. Aaruush uses these ideas to create a platform showcasing a plethora of talent. We find infinity in the number of stars in the night sky, the number of raindrops in an ocean, the memories hidden behind the lens of an eye and the number of ideas that emerge out of minds alike.</p>
+									<p>Aaruush towards Infinity leads these minds towards the path of inspiration, discovery, growth and achievement. It brings out the talents of more than 40,000 of its participants with utmost enthusiasm and gratification. With mind-boggling events and eye-catching highlights, Aaruush ’19 steps into its 13th year with the ambition of leaping across the stars and furthering the very definition of infinity.</p>
+									<p>Motto of Aaruush:</p>
+									<p><b>"Rising in the spirit of innovation"</b></p>
+									<p>Striving to change the world with the power of innovation and cumulative efforts of bright ignited minds to bridge the gap between technological advancements and societal expectations is the bedrock of Aaruush. We believe in constantly rising and approaching problems with innovative solutions to make the world a sound place to live in.</p>
 								</div>
 							</div>
 						</li>
@@ -272,12 +250,12 @@
 						<li class="l-section section">
 							<div class="contact">
 								<div class="contact--lockup">
-									<div class="modal">
+									<div class="modal1">
 										<div class="modal--information">
 											<p>Aaruush Room, opposite Placement Cell,
 												<br>SRM IST, Kattankulathur, TN - 603203</p>
-											<p>Rakesh Mohanty, M. Rahul</p>
-											<a href="tel:+148126287560">+48 12 628 75 60</a>
+											<p>M. Rahul - <a href="tel:+918125273043">+91-8125273043</a></p>
+											<p>Rakesh Mohanty - <a href="tel:+919818475636">+91-9818475636</a></p>
 											<a href="mailto:csiorg@aaruush.net">csiorg@aaruush.net</a>
 										</div>
 										<ul class="modal--options">
@@ -295,118 +273,78 @@
 						<!-- Other main links -->
 						<li class="l-section section">
 							<div class="hire">
-								<h2>MORE</h2>
+								<h2>Trademark Events</h2>
 								<div class="work-request--options">
 									<span class="options-a">
-                                            <a href="#" id="ts_btn">T&#45;Summit</a>
-                                            <a href="#" id="ah_btn">Aaruush Hackathon</a>
-                                            <a href="#" id="sw_btn">Swastika</a>
-                                            <a href="#" id="ws_btn">Wednesday Speaks</a>
+                                            <a href="https://aaruush.net/src/tsummit/" target="_blank">T&#45;Summit</a>
+                                            <a href="#hack_summit" rel="modal:open">Hack Summit</a>
+                                            <a href="#swastika" rel="modal:open">Swastika</a>
+                                            <a href="#lol" rel="modal:open">Litter of Light</a>
+                                            <a href="#srm_run" rel="modal:open">SRM Run</a>
                                       </span>
 									<span class="options-b">
-                                            <a href="#" id="mq_btn">Main Quiz</a>
-                                            <a href="#" id="sr_btn">SRM Run</a>
-                                            <a href="#" id="ae_btn">Aaruush Educates</a>
+                                            <a href="#innovation_fair" rel="modal:open">Innovation Fair</a>
+                                            <a href="#colloseum" rel="modal:open">Colloseum</a>
+                                            <a href="#aaruush_edu" rel="modal:open">Aaruush Educates</a>
+                                            <a href="#aaruush_jun" rel="modal:open">Aaruush Juniors</a>
                                       </span>
 								</div>
 							</div>
+
+							<!-- MODAL CONTENT -->
+							<!-- 
+							<div id="tsummit" class="modal">
+								<h2>T-Summit</h2>
+								<p><b>SRM IST</b> takes leaps with the idea fulfillment of social needs with innovative thinking. To accomplish this idea Technical Summit (T-Summit) brings to the table concepts and plans that contribute towards the betterment of the society and bridge the gap between technological advancement and social needs. The first edition was preceded over by Dr.Avinash Chander, adviser to the Defence Ministry, and Secretary, Department of Defence Research &amp; Development. T Summit ’18 was chaired by Mr. Atul Gurtu, Leader of the Indian Team at CERN, Geneva. Some of the other dignitaries present were Dr. R. K. Sinha, Dr. J. Daniel Chellappa, Mr. Sandeep Sancheti, Dr. Rakesh Agarwal.</p>
+								<p>The projects and papers add on to the country's innovation-culture, thereby achieving sustainable development. The agenda ranges over the education of underprivileged, defence and security, quality management in all sorts of festivals, initiatives of joining the government of India, entrepreneurship, human health condition promotion and protection and agricultural development. A few esteemed colleges included IIT Kanpur, IIT Madras, IIT Hyderabad, NIT Trichy, NIT Nagpur, NIT Calicut, IIT Tirupati, NIT Raipur, VIT Vellore and Manipal University have been a part of this summit.</p>
+							</div>
+							-->
+							<div id="hack_summit" class="modal">
+								<h2>Hack Summit</h2>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+							</div>
+							<div id="swastika" class="modal">
+								<h2>Swastika</h2>
+								<p><b>Swastika</b>, literally translating to "a good start" is one of the flagship events organised as a part of Aaruush. It is a National Level Quiz Competition that is conducted for school students from classes 9 to 12.</p>
+								<p>It strives to provide a platform to give them insight on how the quizzes are conducted at competitive levels and gives them an invaluable experience. The competition not only aims at escalating the levels of quizzing, but also provides a chance for every participant to learn and grow, whilst competing against other students from around the nation.</p>
+							</div>
+							<div id="lol" class="modal">
+								<h2>Litter of Light</h2>
+								<p>Team Aaruush brought about the campaign Liter of Light 2.0, aiming at giving back something to society. The campaign involved the installation of hassle free day-lights in the houses of the villagers. The previous edition of the successful campaigns was conducted in the Nandivaram Village, Guduvancherry. </p>
+								<p>Aaruush touched the lives of the villagers and brought about a change by illuminating their homes, with solar powered self-designed lights.</p>
+
+							</div>
+							<div id="srm_run" class="modal">
+								<h2>SRM Run</h2>
+								<p>With the goal of increasing awareness about clean water and sanitation, Aaruush took the initiative of organising the SRM RUN 4.0. The SRM Run was initiated in the year 2015 and has seen exponential participation in the following years.</p>
+								<p>The 5.4km run bound the youth who came together for a cause and truly did justice to them being called the backbone of a developing nation. Aaruush also broke the Limca World Record under the category “Mass Participation – Biggest Eco Run” in which 1181 people participated and pledged to switch to 100% renewable energy.</p>
+							</div>
+							<div id="innovation_fair" class="modal">
+								<h2>Innovation Fair</h2>
+								<p>It is a platform for the students to showcase their reseach skills, a platform wherein they can present their research projects and papers.</p>
+							</div>
+							<div id="colloseum" class="modal">
+								<h2>Colloseum</h2>
+								<p>This is the premier literary event conducted by Aaruush. This event involves participation from colleges all over India. The level of competition is high and the bar is raised year after year.</p>
+							</div>
+							<div id="aaruush_edu" class="modal">
+								<h2>Aaruush Educates</h2>
+								<p>Aaruush Educates is an initiative taken up by the team to empower the underprivileged sections of society through education. It includes both informative and recreational activities for the participants. The event spans over two days. The events include games, activities and much more. There are various sessions taken up such as disaster management, first-aid application and digital literacy.</p>
+							</div>
+							<div id="aaruush_jun" class="modal">
+								<h2>Aaruush Juniors</h2>
+								<p>To expand the horizon of Aaruush from not just a college fest but also conducting events for college students to give them real world exposure.</p>
+							</div>
 						</li>
-						<!-- MODAL CONENT -->
-						<!-- Tsummit -->
-						<div id="ts_modal" class="modal1">
-							<div class="modal-content">
-								<div class="modal-header">
-									<span class="ts_close close">&times;</span>
-									<h2>T-Summit</h2>
-								</div>
-								<div class="modal-body">
-									<p><b>SRM IST</b> takes leaps with the idea fulfillment of social needs with innovative thinking. To accomplish this idea Technical Summit (T-Summit) brings to the table concepts and plans that contribute towards the betterment of the society and bridge the gap between technological advancement and social needs. The first edition was preceded over by Dr.Avinash Chander, adviser to the Defence Ministry, and Secretary, Department of Defence Research &amp; Development. T Summit ’18 was chaired by Mr. Atul Gurtu, Leader of the Indian Team at CERN, Geneva. Some of the other dignitaries present were Dr. R. K. Sinha, Dr. J. Daniel Chellappa, Mr. Sandeep Sancheti, Dr. Rakesh Agarwal.</p>
-									<p>The projects and papers add on to the country's innovation-culture, thereby achieving sustainable development. The agenda ranges over the education of underprivileged, defence and security, quality management in all sorts of festivals, initiatives of joining the government of India, entrepreneurship, human health condition promotion and protection and agricultural development. A few esteemed colleges included IIT Kanpur, IIT Madras, IIT Hyderabad, NIT Trichy, NIT Nagpur, NIT Calicut, IIT Tirupati, NIT Raipur, VIT Vellore and Manipal University have been a part of this summit.</p>
-								</div>
-							</div>
-						</div>
-						<!-- Hackathon -->
-						<div id="ah_modal" class="modal1">
-							<div class="modal-content">
-								<div class="modal-header">
-									<span class="ah_close close">&times;</span>
-									<h2>Aaruush Hackathon</h2>
-								</div>
-								<div class="modal-body">
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-								</div>
-							</div>
-						</div>
-						<!-- swastika -->
-						<div id="sw_modal" class="modal1">
-							<div class="modal-content">
-								<div class="modal-header">
-									<span class="sw_close close">&times;</span>
-									<h2>Swastika V7</h2>
-								</div>
-								<div class="modal-body">
-									<p><b>Swastika</b>, literally translating to "a good start" is one of the flagship events organised as a part of Aaruush. It is a National Level Quiz Competition that is conducted for school students from classes 9 to 12.</p>
-									<p>It strives to provide a platform to give them insight on how the quizzes are conducted at competitive levels and gives them an invaluable experience. The competition not only aims at escalating the levels of quizzing, but also provides a chance for every participant to learn and grow, whilst competing against other students from around the nation.</p>
-								</div>
-							</div>
-						</div>
-						<!-- Wed_speaks -->
-						<div id="ws_modal" class="modal1">
-							<div class="modal-content">
-								<div class="modal-header">
-									<span class="ws_close close">&times;</span>
-									<h2>Wednesday Speaks</h2>
-								</div>
-								<div class="modal-body">
-									<p>The Wednesday Speaks is a series of technical talks that are delivered by esteemed professors, comprising of their research and areas of their proficiency. These techno-focused lectures provide immense knowledge and rare insight for students, right into the zone of work, for those who are willing to learn. It motivates the student body to actively take part in research-oriented activities and make learning a central goal.</p>
-								</div>
-							</div>
-						</div>
-						<!-- main_quiz -->
-						<div id="mq_modal" class="modal1">
-							<div class="modal-content">
-								<div class="modal-header">
-									<span class="mq_close close">&times;</span>
-									<h2>Main Quiz</h2>
-								</div>
-								<div class="modal-body">
-									<p>The Main Quiz, apart from testing one's general knowledge, logic and deduction skills, also one requires to posses intuition, alertness and presence of mind. With an audience of over 4000 students, faculty members and professionals, the main quiz is one of the most extensive events of Aaruush. Previously, the quiz has been conducted by renowned personalities such as Nitin Gupta a.k.a Rivaldo in 2013, Rajat Kapoor in 2012, renowned quiz master Kabalah in 2011, and best-selling author Chetan Bhagat in 2010.</p>
-								</div>
-							</div>
-						</div>
-						<!-- SRM run -->
-						<div id="sr_modal" class="modal1">
-							<div class="modal-content">
-								<div class="modal-header">
-									<span class="sr_close close">&times;</span>
-									<h2>SRM Run 4.0</h2>
-								</div>
-								<div class="modal-body">
-									<p>With the goal of increasing awareness about clean water and sanitation, Aaruush took the initiative of organising the SRM RUN 4.0. The SRM Run was initiated in the year 2015 and has seen exponential participation in the following years. The 5.4km run bound the youth who came together for a cause and truly did justice to them being called the backbone of a developing nation. Aaruush also broke the Limca World Record under the category “Mass Participation – Biggest Eco Run” in which 1181 people participated and pledged to switch to 100% renewable energy.</p>
-								</div>
-							</div>
-						</div>
-						<!-- aaruush_edu -->
-						<div id="ae_modal" class="modal1">
-							<div class="modal-content">
-								<div class="modal-header">
-									<span class="ae_close close">&times;</span>
-									<h2>Aaruush Educates</h2>
-								</div>
-								<div class="modal-body">
-									<p><b>Aaruush Educates</b> is an initiative taken up by the team to empower the underprivileged sections of society through education. It includes both informative and recreational activities for the participants. The event spans over two days. The events include games, activities and much more. There are various sessions taken up such as disaster management, first-aid application and digital literacy.</p>
-								</div>
-							</div>
-						</div>
 					</ul>
 				</div>
 			</div>
 
-		<div class="foot_img">
-			<img class="bottomright" src="assets/img/team_envision.png" alt="Designed by Team Envision">
-		</div>
+			<div class="foot_img">
+				<img class="bottomright" src="assets/img/team_envision.png" alt="Designed by Team Envision">
+			</div>
 		</div>
 
 
@@ -414,10 +352,10 @@
 		<ul class="outer-nav">
 			<li><a href="">Home</a></li>
 			<li><a href="">About Us</a></li>
-			<li><a href="#">Works</a></li>
+			<li><a href="#">Events</a></li>
 			<li><a href="#">Sponsors</a></li>
 			<li><a href="#">Contact us</a></li>
-			<li><a href="#">More</a></li>
+			<li><a href="#">Trademark Events</a></li>
 		</ul>
 	</div>
 
@@ -426,13 +364,15 @@
 
 	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	<script src="assets/js/particle.js"></script>
-	<script src="assets/js/modal.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script>
 		window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')
 
 	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
+	<!-- jQuery Modal -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 	<script src="assets/js/functions-min.js"></script>
 </body>
 
