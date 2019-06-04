@@ -1146,10 +1146,10 @@ body {
 	background-image: url("../img/srm_logo.png");
 }
 .about--options>a:nth-child(2) {
-	background-image: url("../img/Infinity.png");
+	background-image: url("../img/infinity.png");
 }
 .about--options>a:nth-child(3) {
-	background-image: url("../img/about-history.jpg");
+	background-image: url("../img/a_icon.png");
 }
 .about--options>a:hover h3 {
 	bottom: -50px;
