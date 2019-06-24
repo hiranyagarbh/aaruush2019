@@ -1412,6 +1412,19 @@ body {
 	display: -ms-flexbox;
 	display: flex;
 	width: 70%;
+	margin-bottom: 80px;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}.work-request--options .options-c {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	width: 30%;
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
@@ -1420,7 +1433,7 @@ body {
 	justify-content: space-around;
 }
 .work-request--options .options-a a,
-.work-request--options .options-b a {
+.work-request--options .options-b a{
 	padding: 10px 20px;
 	margin: 8px;
 	border: 3px solid #fff;
@@ -1428,8 +1441,17 @@ body {
 	text-decoration: none;
 	font-family: 'Montserrat';
 }
+.work-request--options .options-c a{
+	padding: 15px 40px;
+	margin-top: 0px;
+	border: 3px solid #fff;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Montserrat';
+}
 .work-request--options .options-a a:hover,
-.work-request--options .options-b a:hover {
+.work-request--options .options-b a:hover,
+.work-request--options .options-c a:hover{
 	background: #EE6F33;
 }
 @media (max-width: 767px) {
@@ -1444,7 +1466,8 @@ body {
 		justify-content: space-around;
 	}
 	.work-request--options .options-a,
-	.work-request--options .options-b {
+	.work-request--options .options-b,
+	.work-request--options .options-c{
 		display: flex;
 		flex-wrap: wrap;
 		width: auto;
