@@ -909,7 +909,7 @@ body {
 	font-size: 12px;
 	font-weight: 700;
 	letter-spacing: 7px;
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: rgba(238, 111, 51, 0.7);
 	border-radius: 100px;
 	padding: 5px 0;
 	text-transform: uppercase;
@@ -935,6 +935,7 @@ body {
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	display: block;
+	opacity: 0.4;
 }
 .work--lockup .slider--item-right {
 	top: 50%;
@@ -942,6 +943,7 @@ body {
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	display: block;
+	opacity: 0.4;
 }
 .work--lockup .slider--item-center {
 	position: relative;
@@ -950,6 +952,7 @@ body {
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 	display: block;
+	
 }
 .work--lockup .slider--item-center a {
 	color: #fff;
