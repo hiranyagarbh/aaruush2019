@@ -626,13 +626,13 @@ body {
 	margin: 0 auto;
 }
 #clocktower {
-	height: 110%;
+	height: 100%;
 	width: auto;
 }
 #scroll_down {
 	position: relative;
 	vertical-align: bottom;
-	bottom: -80px;
+	bottom: -20px;
 	width: 12%;
 	padding-top: 20px;
 	margin: 0 auto 0 auto;
@@ -1361,6 +1361,7 @@ body {
 	margin: 0 0 20px 0;
 	font-size: 30px;
 	text-align: center;
+	text-transform: uppercase;
 }
 .work-request {
 	display: -webkit-box;
@@ -1394,7 +1395,7 @@ body {
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
-	margin: 30px 0;
+	margin: 10px 0;
 }
 .work-request--options .options-a {
 	display: -webkit-box;
@@ -1472,6 +1473,9 @@ body {
 		display: flex;
 		flex-wrap: wrap;
 		width: auto;
+	}
+	.work-request--options .options-c a{
+		margin: 10px;
 	}
 }
 @media (max-width: 600px) and (max-width: 415px) {
