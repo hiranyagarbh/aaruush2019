@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>AARUUSH '19 - T-Summit</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+   ================================================== -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- favicons
+	================================================== -->
+    <link rel="icon" type="image/png" href="favicon.ico">
+
+    <!-- fonts
+    ================================================== -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!-- Font Awesome
+    ================================================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Translate icon tray to side -->
+    <style>
+        .social-icons {
+            display: flex;
+            flex-direction: column;
+            transform: translateX(-40px);
+            bottom: 20px;
+            left: 95vw;
+        }
+    </style>
+
+</head>
+
+<body>
+
+  <img src="srm_logo.png" align="left" id="srm_logo" />
+  <img src="aaruush.png" align="right" hspace="20" id="srm_logo" />
+    <div id="particles-js"></div>
+
+
+    <div class="center ahead">
+        <div class="card">
+            <div class="container">
+                <h1 class="white-text"></h1>
+                <img src="TS_logo.png" class="tsum_logo" />
+                <hr>
+                <section>
+                    <h2></h2>
+                        <p>
+                        The last three decades have seen a plethora of fests from engineers, by engineers and for engineers. These events that make unconventional thinking a skill and seeking solutions to problems, a habit, have just one singular motive driving them forward - the love for technology and innovative technological advancements! What was once just an idea once upon a time has now become a movement gaining constant momentum. SRM Institute of Science and Technology has always aimed to provide its students with massive exposure and support their growth by helping them actualize their potential. As a result of this, the institute has birthed a first of its kind platform for exchange of ideas between the brightest of young Indian minds, the Technical Summit (T-Summit). The Summit hopes to bring together brilliant minds with unique perspectives, from all over the country onto a single rostrum for a brain-storming and gainful session where they can discuss as well as exchange worldviews to bridge the gap between technology and society. T-summit requires its participants to look at the world with the end-goal of proposing practical solutions and not merely theories on paper. It provides the platform for debate, discussion and implementation of various ideas under the umbrella of technology and its ever-growing applications. The fruits that the Summit would bear will propel the nation forward, towards a better future.
+                        </p>
+                        <p>
+                          For Details Contact:<br>Jatin Lala: +91 9952081963<br>
+                          Shreya Sharma: +91 9871119285<br>
+                          Nihal Baldwa:+91 9176200238<br>
+                          Kaushik Dutta:+91 9113405798<br><br>
+                        </p>
+                </section>
+                <section class="tsum">
+                    <a href="ts1.html"><button class="btn draw-border">T-Summit 1.0</button></a>
+                    <a href="ts2.html"><button class="btn draw-border">T-Summit 2.0</button></a>
+                    <a href="ts4.html"><button class="btn draw-border">T-Summit 3.0</button></a>
+                    <a href="ts4.html"><button class="btn draw-border">T-Summit 4.0</button></a>
+                </section>
+
+            </div> <!-- /container -->
+        </div> <!-- /card -->
+    </div> <!-- /center -->
+
+    <div class="bottomleft">
+        <p>&copy; Team Envision</p>
+    </div>
+
+    <!-- ==================== Fade Animation Overlay ================= -->
+    <div class="fadeout fadeoutanime" id="fade"></div>
+
+    <!-- ================== Social Links ============================== -->
+    <div class="social-icons">
+        <div class="icon-bg"><a href="https://www.facebook.com/aaruush.srm/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true" title="Facebook"></i></a></div>
+        <div class="icon-bg"><a href="https://twitter.com/aaruushsrmist" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true" title="Twitter"></i></a></div>
+        <div class="icon-bg"><a href="https://www.instagram.com/aaruush_srm/" target="_blank"><i class="fa fa-instagram" aria-hidden="true" title="Insagram"></i></a></div>
+        <div class="icon-bg"><a href="https://www.youtube.com/channel/UC6mwWpwkZchii-oyWz0v3dw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true" title="Youtube Channel"></i></a></div>
+        <div class="icon-bg"><a href="https://www.linkedin.com/company/aaruush-srm-university/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true" title="Linkedin"></i></a></div>
+    </div>
+
+    <!-- Particle Script -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.2/lottie.min.js"></script>
+    <script>
+        var navLink = document.getElementsByClassName('nav-link');
+        fade = document.getElementById('fade');
+        setTimeout((e) => {
+            fade.classList.remove('fadeout'); fade.classList.remove('fadeoutanime');
+        }, 400) ;
+            for (i = 0; i < 6; i++)
+                navLink[i].addEventListener('click', function () {
+                    link = this.getAttribute('data-href');
+                    document.querySelector('#fade').classList.add('fadein');
+                    document.querySelector('#fade').classList.add('fadeinanime');
+                    setTimeout(function () {
+                        window.location.href = link;
+                    }, 1000);
+                });
+    </script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

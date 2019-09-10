@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>AARUUSH '19 - T-Summit</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+   ================================================== -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- favicons
+	================================================== -->
+    <link rel="icon" type="image/png" href="favicon.ico">
+
+    <!-- fonts
+    ================================================== -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!-- Font Awesome
+    ================================================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Translate icon tray to side -->
+    <style>
+        .social-icons {
+            display: flex;
+            flex-direction: column;
+            transform: translateX(-40px);
+            bottom: 20px;
+            left: 95vw;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<img src="srm_logo.png" align="left" id="srm_logo" />
+<img src="aaruush.png" align="right" hspace="20" id="srm_logo" />
+
+    <div id="particles-js"></div>
+
+
+    <div class="center ahead">
+        <div class="card">
+            <div class="container">
+               <img src="TS_logo.png" class="tsum_logo" /><hr>
+                <h1 class="white-text">T-Summit 4.0</h1>
+                <section>
+<h1>Coming Soon</h1><br>
+  For Details Contact:<br>Jatin Lala: +91 9952081963<br>
+  Shreya Sharma: +91 9871119285<br>
+  Nihal Baldwa:+91 9176200238<br><br>
+                   <!-- CONTENT GOES HERE -->
+
+
+
+
+                    </section>
+
+                <section class="tsum">
+                    <a href="index.html"><button class="btn draw-border">About T-Summit</button></a>
+                    <a href="ts1.html"><button class="btn draw-border">T-Summit 1.0</button></a>
+                    <a href="ts2.html"><button class="btn draw-border">T-Summit 2.0</button></a>
+                    <a href="ts3.html"><button class="btn draw-border">T-Summit 3.0</button></a>
+                </section>
+
+            </div> <!-- /container -->
+        </div> <!-- /card -->
+    </div> <!-- /center -->
+
+    <div class="bottomleft">
+        <p>&copy; Team Envision</p>
+    </div>
+
+    <!-- ==================== Fade Animation Overlay ================= -->
+    <div class="fadeout fadeoutanime" id="fade"></div>
+
+    <!-- ================== Social Links ============================== -->
+    <div class="social-icons">
+        <div class="icon-bg"><a href="https://www.facebook.com/aaruush.srm/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true" title="Facebook"></i></a></div>
+        <div class="icon-bg"><a href="https://twitter.com/aaruushsrmist" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true" title="Twitter"></i></a></div>
+        <div class="icon-bg"><a href="https://www.instagram.com/aaruush_srm/" target="_blank"><i class="fa fa-instagram" aria-hidden="true" title="Insagram"></i></a></div>
+        <div class="icon-bg"><a href="https://www.youtube.com/channel/UC6mwWpwkZchii-oyWz0v3dw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true" title="Youtube Channel"></i></a></div>
+        <div class="icon-bg"><a href="https://www.linkedin.com/company/aaruush-srm-university/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true" title="Linkedin"></i></a></div>
+    </div>
+
+    <!-- Particle Script -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.2/lottie.min.js"></script>
+    <script>
+        var navLink = document.getElementsByClassName('nav-link');
+        fade = document.getElementById('fade');
+        setTimeout((e) => {
+            fade.classList.remove('fadeout'); fade.classList.remove('fadeoutanime');
+        }, 400) ;
+            for (i = 0; i < 6; i++)
+                navLink[i].addEventListener('click', function () {
+                    link = this.getAttribute('data-href');
+                    document.querySelector('#fade').classList.add('fadein');
+                    document.querySelector('#fade').classList.add('fadeinanime');
+                    setTimeout(function () {
+                        window.location.href = link;
+                    }, 1000);
+                });
+    </script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,370 @@
+*{
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    background-color: #0f1824;
+    height: 100%;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+canvas {
+    display: block;
+}
+
+
+/* ========= particles.js container ========= */
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* ================================================================
+========================== MAIN BODY ==============================
+=================================================================== */
+#srm_logo {
+    width: 8%;
+    margin-left: 10px;
+}
+
+/* ========== MENU ========= */
+.hamburger {
+  width: 50px;
+  cursor: pointer;
+  z-index: 999;
+  position: relative;
+  margin-right: 3vw;
+  margin-top: 5vh;
+  float: right;
+}
+.overlay-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.7));
+    z-index: 990;
+    opacity: 0;
+    padding: 64px;
+}
+.overlay-menu ul{
+    color: whitesmoke;
+    font-size: 2rem;
+    margin: 11% auto 0 auto;
+    width: 50vw;
+    padding: 0;
+    /*transform: translateX(-50%);*/
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+}
+.overlay-menu ul li{
+    margin: 30px;
+    
+}
+.overlay-menu ul li a {
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 6px;
+    transition: 0.2s;
+    border-bottom: 2px dashed transparent;
+}
+.overlay-menu ul li a:hover{
+    color: rgb(240,103,48);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* ======= header img ========*/
+#header {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 100
+}
+
+#header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    width: 45%;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    z-index: 100 margin: 0 auto;
+    position: absolute;
+}
+/* ====== PLANET ANIMATION ======= */
+.planet1 {
+  -webkit-animation: mymove1 18s ease-in-out infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove1 18s ease-in-out infinite;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@-webkit-keyframes mymove1 {
+  from {left: 0px;}
+  to {left: 100px;}
+}
+@keyframes mymove1 {
+  from {left: 0px;}
+  to {left: 100px;}
+}
+
+.planet2 {
+  -webkit-animation: mymove2 18s ease-in-out infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove2 18s ease-in-out infinite;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@-webkit-keyframes mymove2 {
+  from {top: 0px;}
+  to {top: 100px;}
+}
+@keyframes mymove2 {
+  from {top: 0px;}
+  to {top: 100px;}
+}
+
+/* ======= astronaut =======*/
+.astro img{
+    height: 300px;
+    width: auto;
+    transform: rotate(0deg);
+      -webkit-animation: astrofly 2.8s ease-in-out infinite;
+      animation: astrofly 2.8s ease-in-out infinite;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+}
+@-webkit-keyframes astrofly {
+  from {top: 0px;}
+  to {top: 30px;}
+}
+@keyframes astrofly {
+  from {top: 0px;}
+  to {top: 30px;}
+}
+
+.ahead {
+    z-index: 100;
+    position: relative;
+}
+
+
+/* ================ ORBIT ================ */
+.fluid-container {
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    margin-left: auto;
+    z-index: 0
+}
+
+.fluid {
+    margin-left: auto;
+}
+
+.fluid::before {
+    content: '';
+    display: block;
+    width: 140vh;
+    height: 55vh;
+    min-height: 200px;
+    min-width: 200px;
+    border: 2px solid #65737e; /* #2e476b - dark */
+    background-size: 1600% 1600%;
+    animation:transform 55s ease-in-out infinite both alternate;
+}
+
+@keyframes transform {
+
+    0%,
+    100% {
+        border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+    }
+
+    14% {
+        border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+    }
+
+    28% {
+        border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+    }
+
+    42% {
+        border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+    }
+
+    56% {
+        border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+    }
+
+    70% {
+        border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+    }
+
+    84% {
+        border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+    }
+}
+
+@use autoprefixer(browsers: "> 3%");
+/* =========== ORBIT END ============= */
+
+/* copyright */
+.bottomleft {
+    position: absolute;
+    bottom: 60px;
+    left: -45px;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #2d476c;
+    transform: rotate(90deg);
+
+}
+
+.fadein {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    opacity: 0;
+    display: none;
+    z-index: 999;
+    background-color: black;
+}
+
+.fadeinanime {
+    display: block;
+    animation: fadeinanime 0.4s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeinanime {
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeout {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    opacity: 1;
+    z-index: 999;
+    background-color: black;
+}
+
+.fadeoutanime {
+    display: block;
+    animation: fadeoutanime 0.1s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeoutanime {
+    100% {
+        opacity: 0;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.card {
+    width: 68%;
+    display: inline-block;
+    margin-top: 10vh;
+    margin-left: 50px;
+    background-color: rgba(0,0,0, 0.6);
+    
+}
+
+.white-text {
+    color: white;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 5% 5%;
+}
+
+section {
+    color: #fff;
+}
+section h3{
+    text-align: center;
+}
+section p{
+    text-align: left;
+}
+section img {
+    width: 100%;
+}
+
+
+
+/* ============== Social icons ==============*/
+.social-icons{
+    position: fixed;
+    z-index: 990;
+    bottom: 20px;
+    left: 50vw;
+    transform: translateX(-50%);
+    font-size: 20px;
+}
+
+.social-icons i {
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.icon-bg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+}
+.icon-bg a {
+    color: rgb(199, 194, 194) !important;
+}
+ 
+.social-icons i:hover {
+    cursor: pointer;
+    color: #fff !important;
+}
+
+
+.tsum_logo {
+    width: 600px;
+    
+}
+
+.tsum button {
+    background: #000;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px;
+    border: 4px solid #357283; 
+}
+.tsum button:hover {
+    text-decoration: none;
+    border: 4px solid #E26E38;
+}

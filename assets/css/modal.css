@@ -14,6 +14,10 @@
 .modal a {
 	border-bottom: none !important;
 }
+.modal img {
+	margin: auto;
+	display: block;
+}
 .modal strong {
 	color: #666;
 }
