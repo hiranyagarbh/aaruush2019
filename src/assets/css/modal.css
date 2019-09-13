@@ -12,6 +12,15 @@
 }
 .modal a {
 	border-bottom: none !important;
+	font-size: 700 !important;
+	color: #333 !important;
+}
+.modal p a {
+	border-bottom: 2px dotted #9f9f9f !important;
+}
+.modal a:hover {
+	border-bottom: 2px dotted #000 !important;
+	color: #000;
 }
 .modal strong {
 	color: #666;
